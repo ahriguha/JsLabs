@@ -13,7 +13,7 @@ $('document').ready(function(){
 			guitars.push({
 				name: $('#name').val(),
 				price: $('#price').val()
-			});
+			});			
 		}else{
 			let guitar = guitars.find((g)=>g.name == name);
 			guitar.name = $('#name').val();

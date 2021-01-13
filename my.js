@@ -5,11 +5,14 @@ $("document").ready(function(){
 		rowText = 
 		`<tr>
 		<td>${row.name}</td>
+		<td>${row.price}</td>
 		<td class="text-right">
 		<a class="btn btn-outline-secondary" href="guitar.html?
-		text=${row.name}">
+		name=${row.name}">
 		<i class="fa fa-fw fa-edit"></i>
 		</a>
+		</td>
+		<td class="tex-right">
 		<button type="button" class="btn btn-outline-danger rem-row"
 		rowid="${row.name}">
 		<i class="fa fa-fw fa-trash"></i>
@@ -19,7 +22,7 @@ $("document").ready(function(){
 		content.append(rowText);
 	}
 	$('.rem-row').click(function(){
-		let number = $(this).attr('rowid');
+		let name = $(this).attr('rowid');
 		saveGuitars(guitars.filter((g)=>g.name !== name));
 		location.reload();
 	})
