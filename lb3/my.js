@@ -7,6 +7,7 @@ for(var row of guitars){
 	var rowText = document.createElement('ion-item');
 	rowText.innerHTML = 
 	`<ion-label>${row.name}</ion-label>
+	<ion-label>${row.price}</ion-label>
 	<ion-button class="edit" color="primary" size="medium" rowid="${row.name}">
 		<ion-icon name="create"></ion-icon>
 	</ion-button>
