@@ -1,6 +1,6 @@
 let editType = '';
 let name = '';
-document.addEventListener("DOMContentLaded", function(event){
+document.addEventListener("DOMContentLoaded", function(event){
 var rowText;
 var list = document.getElementById('list');
 for(var row of guitars){
@@ -23,7 +23,7 @@ document.querySelectorAll('.edit')
 	.forEach(input => input.addEventListener('click', ({target}) =>{
 		editType = "edit";
 		name = target.getAttribute('rowid');
-		let guitar = gutars.find((g) => g.name == name);
+		let guitar = guitars.find((g) => g.name == name);
 		document.getElementById('name').value = guitar.name;
 		document.getElementById('price').value = guitar.price;
 		document.querySelector('#main').style.display = "none";
