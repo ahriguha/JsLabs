@@ -5,6 +5,7 @@ var rowText;
 var list = document.getElementById('list');
 for(var row of guitars){
 	var rowText = document.createElement('ion-item');
+	//rowText.setAttribute("style", "background: #dcd6be;");	
 	rowText.innerHTML = 
 	`<ion-label>${row.name}</ion-label>
 	<ion-label>${row.price}</ion-label>
