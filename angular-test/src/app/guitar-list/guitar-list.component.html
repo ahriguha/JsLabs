@@ -1,0 +1,6 @@
+<h5 class="center-align">List guitars</h5>
+<app-new-guitar></app-new-guitar>
+<app-guitar
+	*ngFor="let group of groups; let i = index"
+	[group]="group" [grpIndex]="i">
+</app-guitar>
